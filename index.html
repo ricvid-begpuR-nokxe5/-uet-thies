@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b78">
+  <title>UET | Union des Élèves de Thiès</title>
+  <style>
+    :root {
+      --bleu: #123b78;
+      --orange: #f07832;
+      --clair: #f4f7fc;
+      --texte: #263247;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--texte);
+      line-height: 1.6;
+      background: white;
+    }
+    header {
+      background: var(--bleu);
+      color: white;
+      padding: 14px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 22px; font-weight: bold; }
+    .brand span { color: #ffad69; }
+    nav { display: flex; gap: 15px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; }
+    .hero {
+      background: linear-gradient(135deg, #123b78, #2364a5);
+      color: white;
+      padding: 65px 7%;
+      text-align: center;
+    }
+    .hero .sigle { color: #ffad69; font-size: 54px; font-weight: bold; }
+    .hero h1 { font-size: clamp(28px, 6vw, 44px); line-height: 1.2; }
+    .hero p { max-width: 650px; margin: 18px auto; }
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 8px 4px;
+    }
+    .btn-light { background: white; color: var(--bleu); }
+    section { padding: 42px 6%; }
+    section h2 { color: var(--bleu); text-align: center; }
+    .intro { max-width: 780px; text-align: center; margin: auto; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .card {
+      padding: 22px;
+      background: var(--clair);
+      border-radius: 12px;
+      border-top: 4px solid var(--orange);
+    }
+    .card h3 { color: var(--bleu); margin-top: 0; }
+    .join { background: #fff4eb; text-align: center; }
+    .news-placeholder { text-align: center; color: #5d687a; }
+    footer {
+      background: #0c2850;
+      color: white;
+      text-align: center;
+      padding: 25px 6%;
+    }
+    footer p { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span>UET</span> Thiès</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#missions">Nos missions</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#adhesion">Adhésion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="sigle">UET</div>
+      <h1>Union des Élèves de Thiès</h1>
+      <p>Agir avec respect et discipline pour la défense de nos intérêts.</p>
+      <a class="btn" href="#adhesion">Rejoindre l’UET</a>
+      <a class="btn btn-light" href="#apropos">Découvrir l’UET</a>
+    </section>
+
+    <section id="apropos">
+      <h2>Bienvenue à l’UET</h2>
+      <p class="intro">
+        L’Union des Élèves de Thiès rassemble les élèves autour de la solidarité,
+        du respect, de la discipline et de la défense de leurs intérêts.
+        Notre ambition est de contribuer à de meilleures conditions d’études
+        et de favoriser la participation des élèves à la vie collective.
+      </p>
+    </section>
+
+    <section id="missions">
+      <h2>Nos missions</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Défendre les élèves</h3>
+          <p>Porter les préoccupations des élèves et contribuer à la recherche de solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Promouvoir la solidarité</h3>
+          <p>Encourager l’entraide, l’écoute et l’unité entre les élèves de Thiès.</p>
+        </article>
+        <article class="card">
+          <h3>Agir avec discipline</h3>
+          <p>Favoriser le respect, la responsabilité et l’engagement citoyen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="actualites">
+      <h2>Actualités de l’UET</h2>
+      <p class="news-placeholder">
+        Les annonces et les activités de l’Union seront présentées ici.
+      </p>
+    </section>
+
+    <section class="join" id="adhesion">
+      <h2>Rejoindre l’UET</h2>
+      <p>Tu souhaites participer aux activités de l’Union et contribuer à ses missions ?</p>
+      <p>Reste attentif aux annonces officielles concernant les adhésions.</p>
+      <a class="btn" href="mailto:uet.thies@gmail.com?subject=Demande%20d%27information%20sur%20l%27adhesion">
+        Nous contacter par e-mail
+      </a>
+      <p><small>Adresse de contact à confirmer par le bureau de l’UET.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>UET — Union des Élèves de Thiès</strong></p>
+    <p>Agir avec respect et discipline pour la défense de nos intérêts.</p>
+    <p>© 2026 UET — Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
